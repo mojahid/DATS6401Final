@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	
+</style>
+
+    <title>Housing Price Analysis in USA</title>
+
+    <!-- CSS reference -->
+    <link rel="stylesheet" href="static/css/bootstrap.min.css">
+    <!--  Custom CSS -->
+    <link rel="stylesheet" href="static/css/style.css">
+	<!-- d3 JS -->
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+	
+ 
+
+</head>
+<body>
+										
+ <div class="container col-sm-8" style="background-color: #eee;">  
+   <div class="wrapper">  
+
+    <!-- Sidebar  -->
+    <nav id="sidebar">
+        <div class="text-center">
+            <p></p>
+            <a href="http://bulletin.gwu.edu/search/?P=DATS%206401"><h5>Visualization of Complex Data</h5></a>
+            <a href="https://www.gwu.edu/"><img src="static/images/gw_logo.png"> </a>
+        </div>
+
+        <div class="line"></div>
+
+        <ul class="list-unstyled">
+
+            <li class="text-center">
+                <a href="index.html">Overview</a>
+            </li>
+
+            <li class="text-center">
+                <a href="fema.html">FEMA Aanalysis</a>
+            </li>
+
+            <li class="text-center">
+                <a href="price.html">Hosuing Price Aanalysis</a>
+            </li>
+
+            <li class="text-center">
+                <a href="map.html">Map</a>
+            </li>
+
+        </ul>
+        <div class="line"></div>
+    </nav>  <!-- Sidebar End  -->
+
+    <!-- Page Content  -->
+    <div id="content">
+
+
+        <h2>Natural Disasters effect in Housing Pricing in USA</h2>
+         <p class="text-justify">Natural Disasters is the one of the most threaten to the people live in US, the natural disaster include but not limited to hurricane, 
+		tornado, storm, high water, wind-driven water, tidal wave, tsunami, earthquake, volcanic eruption, landslide, mudslide, and snowstorm. </p>
+		
+         <p class="text-justify">In many cases the president of united states can declare an emergency when the president determines 
+		a federal assistance may needed providing emergency services, 
+		such as the protection of lives, property, public health, and safety. 
+		The impact of these disaster has a direct effect on the resident in different way, 
+		some these effects are economics implications or sometimes psychological or moral effects.</p>
+			<p></p>
+
+        <div class="row">
+		    <div class="col-sm-6 ">
+		       <h3>Analysis Fema data</h3>
+                 <p class="text-justify">The objective of this project is to study the behavior of these natural disasters and their impact on the US economy, 
+				   and we will be focusing on the effects on Housing pricing. It’s very clear that some types of these natural disaster like hurricane, 
+				   tsunami and earthquake has a major impact on the properties like houses and building, and the areas that declare as 
+				   a potential disasters area has more risk than other and properties in these areas has least attract people and developers. </p>
+				   <p class="text-justify">In this project I am going to study this hypothesis by using a natural disaster data for all disaster declared by the president since 1953 created 
+				   by (Federal Emergency Management Agency – FEMA). I am going to use data for only 10 years from 2007-2017 in this project and join the disaster data 
+				   with data of Housing Price Index created by (Zillow – one of the major real state databases in US) also for the period of 10 years from 2007-2017.</p>
+            </div>
+			
+            <div class="col-sm-6 ">
+			    <div class="card shadow mb-1 ">
+                    <div class="card-body text-center">
+                        <div id="piechart" class="ct-chart ct-perfect-fourth">
+						    <p>Most disasters decleard of the past 10 years</p>
+                            <script src="static/js/piechart.js"></script> 
+							<p>For more information and analsysis <a class="btn btn-link" href="fema.html">please click here</a> </p>
+								
+                        </div>
+                    </div>
+                </div>       
+			</div>	
+			
+	    </div>
+
+		 <div class="line"></div>
+
+        <div class="row">
+		   <div class="col-sm-6 ">
+		       <h3>Analysis Housing Pricing</h3>
+                 <p class="text-justify">Part of this project we are going to analyze the house pricing in USA using data from Zillow – one of the major real state databases in US –
+                                         and we will be focusing on the Housing pricing change between based on the disaster  declared. 
+                                        </p>
+				   
+				   <p class="text-justify">Also I am going to study this hypothesis by using a natural disaster data for all disaster declared by the president since 1953 created 
+				   by (Federal Emergency Management Agency – FEMA). I am going to use data for only 10 years from 2007-2017 in this project and join the disaster data 
+				   with data of Housing Price Index created by (Zillow – one of the major real state databases in US) also for the period of 10 years from 2007-2017.</p>
+            </div>
+			
+			<div class="col-sm-6 ">
+			    <div class="card shadow mb-1 ">
+                    <div class="card-body text-center">
+                        <div id="barchart" class="ct-chart ct-perfect-fourth">
+						   
+						    <p>Top typs of disaster happend last years</p>		
+							<script src="static/js/barchart.js"></script>
+							<p>For more information and analsysis <a class="btn btn-link" href="price.html">please click here</a> </p> 
+                        
+                    </div>
+                </div>       
+			</div>	
+        					
+	    </div>
+
+        <div class="line"></div>
+        <p>   </p>
+     
+
+    
+
+            <footer class="container footer text-muted text-sm-center ">
+                <div class=class="container text-center">
+                    <nav>
+                        <p class="copyright text-center">
+                            Copyright &copy; -
+                            <script>
+							var d = new Date();
+							document.write(d.getFullYear());
+
+                            </script>
+
+                            - For questions please contact - mojahid_osman@gwu.edu
+                        </p>
+                    </nav>
+                </div>
+            </footer>
+ 
+
+
+    </div>
+
+ </div>
+</div>
+
+
+
+	
+</body>
